@@ -1,11 +1,13 @@
-var a,b,i:integer;
-
+program onefivesix;
+var a,b:integer;
 begin
-read(i);
-for i:=1 to 50 do
- begin
- if (i div 5) then 
-  if (i div 7) then a:=i;
- write(a+a);
- end;
+for a:=1 to 50 do
+  begin
+    if (a mod 5)=0 then
+      b:=a+b
+    else
+      if (a mod 7)=0 then
+        b:=a+b
+  end;
+writeln(b);
 end.
